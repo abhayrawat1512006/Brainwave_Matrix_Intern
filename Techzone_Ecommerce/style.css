@@ -1,0 +1,96 @@
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: #f0fdfa;
+  color: black;
+}
+
+/* Navbar Style */
+.custom-navbar {
+  background-color: #20b2aa;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  height: 85vh;
+  background: linear-gradient(to bottom right, #20b2aa, #ffffff);
+  color: black;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s;
+}
+
+/* Blink Effect on Tap */
+.blink-on-tap:active {
+  animation: blink 0.3s ease;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Pop-up Box Style */
+.popup-box {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Style */
+.explore-btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.explore-btn:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+/* 🎯 3D Product Card */
+.product-card {
+  perspective: 1000px;
+}
+
+.product-card-inner {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.product-card:hover .product-card-inner {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Festival Offer */
+.festival-offer {
+  background: linear-gradient(135deg, #20b2aa, #6a5acd);
+  border-radius: 25px;
+  margin: 30px 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.festival-offer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}

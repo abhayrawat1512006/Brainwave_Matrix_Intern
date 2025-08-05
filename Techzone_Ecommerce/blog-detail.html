@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Details - TechZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f0fdfa;
+      font-family: 'Times New Roman', serif;
+      color: black;
+    }
+
+    .popup-box {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .back-btn {
+      background-color: #20b2aa;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin-bottom: 20px;
+    }
+
+    .blog-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    #blogContent {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="popup-box">
+      <button class="back-btn" onclick="history.back()">⬅ Back</button>
+      <h2 id="blogTitle" class="mb-3"></h2>
+      <img id="blogImage" class="blog-img" src="" alt="Blog Image" />
+      <p id="blogContent"></p>
+    </div>
+  </div>
+
+  <script>
+    const blog = JSON.parse(localStorage.getItem("selectedBlog"));
+    if (blog) {
+      document.getElementById("blogTitle").innerText = blog.title;
+      document.getElementById("blogContent").innerText = blog.content;
+      document.getElementById("blogImage").src = blog.img || "https://via.placeholder.com/800x400?text=Blog+Image";
+    } else {
+      document.getElementById("blogTitle").innerText = "No Blog Selected";
+      document.getElementById("blogContent").innerText = "Please go back and choose a blog.";
+      document.getElementById("blogImage").style.display = "none";
+    }
+  </script>
+</body>
+</html>

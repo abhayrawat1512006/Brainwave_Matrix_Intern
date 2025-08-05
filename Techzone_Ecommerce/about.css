@@ -1,0 +1,88 @@
+/* 🔄 Gradient Background Animation */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(135deg, #fceae8, #b2fefa);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: black;
+  height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌐 Navbar Styling */
+.custom-navbar {
+  background-color: #20b2aa;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 20px;
+  margin-left: 15px;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* 🌟 Welcome Box */
+.welcome-box {
+  background: white;
+  color: #20b2aa;
+  padding: 15px 25px;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: rotateX(12deg) rotateY(5deg);
+  transition: transform 0.3s ease;
+}
+
+.welcome-box:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+}
+
+/* 🔮 Glass Box Styling */
+.glass-box {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  max-width: 800px;
+  transform: rotateY(3deg);
+}
+
+.glass-box:hover {
+  transform: rotateY(0deg) scale(1.01);
+}
+
+/* 🧠 Typing Animation with Blur */
+.about-typing {
+  filter: blur(0.5px);
+  animation: fadeIn 1s ease;
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; filter: blur(4px); }
+  to { opacity: 1; filter: blur(0.5px); }
+}

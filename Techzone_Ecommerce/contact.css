@@ -1,0 +1,78 @@
+/* 🔄 Gradient Animated Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(135deg, #fceae8, #b2fefa);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌐 Navbar */
+.custom-navbar {
+  background-color: #20b2aa;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 20px;
+  margin-left: 15px;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* 📬 Glass Card */
+.contact-wrapper {
+  height: 90vh;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  transform: rotateY(4deg);
+  transition: transform 0.4s ease;
+}
+
+.glass-card:hover {
+  transform: rotateY(0deg) scale(1.01);
+}
+
+/* 🧠 Headline Box */
+.headline-box {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.2);
+  transform: rotateX(8deg);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.headline-box:hover {
+  transform: rotateX(0deg) scale(1.05);
+}

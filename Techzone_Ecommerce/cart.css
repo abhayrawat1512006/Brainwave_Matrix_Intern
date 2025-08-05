@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(-45deg, #c6f0dd, #fce1cd, #c6f0dd, #fce1cd);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.custom-navbar {
+  background-color: #20b2aa;
+}
+
+.card-3d {
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-3d:hover {
+  transform: rotateY(5deg) rotateX(5deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.popup-box {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,41 @@
+/* 🔄 Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(135deg, #fceae8, #b2fefa);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧊 Center Glassy Box */
+.login-wrapper {
+  height: 100vh;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 90%;
+  transform: rotateY(5deg);
+  transition: transform 0.4s ease;
+}
+
+.glass-card:hover {
+  transform: rotateY(0deg) scale(1.03);
+}
+
+input.form-control {
+  border-radius: 10px;
+  box-shadow: none;
+}

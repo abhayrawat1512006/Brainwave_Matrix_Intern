@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-box">
+    <h2>Register</h2>
+    <form onsubmit="registerUser(event)">
+      <input type="text" id="register-name" placeholder="Full Name" required />
+      <input type="email" id="register-email" placeholder="Email" required />
+      <input type="password" id="register-password" placeholder="Password" required />
+      <input type="password" id="register-confirm" placeholder="Confirm Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <p class="register-link">Already have an account? <a href="index.html">Login here</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

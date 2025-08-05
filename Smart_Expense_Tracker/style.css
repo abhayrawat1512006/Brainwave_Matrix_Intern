@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d4bfff, #f2e4ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 320px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  animation: popup 0.4s ease-in-out;
+}
+
+.login-box h2 {
+  color: #5a3d85;
+  margin-bottom: 25px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  transition: transform 0.2s ease;
+  background: rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+  box-shadow: 0 0 4px rgba(90, 61, 133, 0.1);
+}
+
+.login-box input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(90, 61, 133, 0.25);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #a974ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #925dff;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #6a38b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+body {
+  background: linear-gradient(135deg, #ecdfff, #f3e6ff);
+  transition: 0.4s;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+}
+
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#darkToggle {
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.popup {
+  animation: popup 0.4s ease-in-out;
+}
+
+.wide-card {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.filters input[type="text"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.6);
+  font-size: 14px;
+}
+
+button, select, input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 14px;
+}

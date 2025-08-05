@@ -1,0 +1,120 @@
+/* 🌤 Light Purple Background */
+body {
+  background: #e9d5ff;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s ease;
+}
+
+/* 🌑 Dark Mode */
+body.dark-mode {
+  background: #000000;
+  color: #fd30e8;
+}
+
+/* 🔷 Header Top Bar */
+.top-bar {
+  background-color: #b3e5fc; /* light blue */
+  color: #512da8;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* 🔲 Glassy Curved Boxes */
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: popUp 0.5s ease;
+}
+
+/* ✨ Pop-up animation */
+@keyframes popUp {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 💡 Dark Mode glass box */
+body.dark-mode .glass-box {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgb(244, 35, 216);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 🟣 Buttons and form elements */
+.btn,
+.form-control,
+.form-select {
+  border-radius: 12px;
+}
+
+/* 🪙 Transaction List */
+#transactionList li {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+body.dark-mode #transactionList li {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fa3f9f;
+}
+
+/* 📢 Popup Message */
+.popup-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6f42c1;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: none;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+/* 📊 Chart canvas */
+canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+/* 📛 Title Style */
+#dashboard-title {
+  color: rgba(90, 50, 140, 0.85);
+  font-weight: bold;
+  font-size: 2rem;
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  display: inline-block;
+}
+
+/* 📍 LIVE Tag */
+.flag-tag {
+  background-color: #7f3f98;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+/* ☰ Dropdown Fix */
+.dropdown-menu {
+  margin-top: 10px !important;
+}

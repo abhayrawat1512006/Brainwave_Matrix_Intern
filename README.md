@@ -12,9 +12,6 @@ This repository contains all web development internship projects created by *Abh
 
 A modern, animated e-commerce website for tech gadgets featuring glassmorphism UI, interactive product cards, offers, and scroll-based sections.
 
-🔹 [View Markdown Report](./TechZone_Ecommerce/Report.md)  
-📄 [Download PDF Report](./TechZone_Ecommerce/TechZone_Project_Report.pdf)
-
 *Key Features:*
 - Responsive design with Bootstrap 5
 - Add-to-cart buttons with emoji
@@ -23,7 +20,7 @@ A modern, animated e-commerce website for tech gadgets featuring glassmorphism U
 
 ---
 
-### 📁 Smart_Expense_Tracker (Coming Soon)
+### 📁 Smart_Expense_Tracker ()
 
 A smart dashboard for tracking salary, expenses, and savings — with features like:
 
@@ -32,9 +29,6 @@ A smart dashboard for tracking salary, expenses, and savings — with features l
 - Category-wise pie chart
 - Monthly income/expense overview
 
-> ✅ This project will be uploaded in the next commit.
-
----
 
 ## 👨‍💻 Developer
 
